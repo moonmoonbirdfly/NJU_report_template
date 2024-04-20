@@ -1,7 +1,7 @@
 
 # 声明
 
-本模板是基于https://github.com/NJUKang/NJUReportTemplate 的模板修改而成，是自己自用的小论文模板
+本模板是基于https://github.com/NJUKang/NJUReportTemplate 的模板修改而成，是自用的小论文模板
 
 下面是原仓库readme.
 
