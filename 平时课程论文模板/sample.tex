@@ -1,0 +1,204 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%%
+%% 使用 njuthesis 文档类生成南京大学本科生毕业论文的示例文档
+%% 
+%%
+
+%% 
+%% 南京大学本科学位论文模板
+
+%% thesis表示毕业论文，design表示毕业设计
+%% 如需Adobe字体请用
+%% 如果字体不全使用Adobe选项可能会报错
+%\documentclass[adobefonts, thesis]{njuthesis}
+%% MacOS系统请用
+%\documentclass[macfonts, thesis]{njuthesis}
+%% Windows系统请用
+\documentclass[winfonts, thesis]{njuthesis}
+\usepackage{anyfontsize}
+%% Linux系统请用
+% \documentclass[linuxfonts, thesis]{njuthesis}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 设置论文的中文封面
+
+% 论文标题
+
+\title{浅析所有人都爱摸鱼定律的数学原理与应用}
+\classname{摸鱼导论}
+% 长标题
+% \titlea{一二三四五六七八九十一二三四}
+% \titleb{一二三四五六七八九十一二三}
+% \titlec{一二三四五六七八九十一二三}
+
+
+% 论文作者姓名
+\author{小摸鱼}
+% 论文作者学号
+\studentid{220000000}
+% 导师姓名职称
+\supervisor{摸鱼老板}
+% 导师职称
+
+
+% % （可能存在的）第二导师姓名
+% \secondsupervisor{第二导师}
+% % 导师职称
+% \secondsupervisortitle{导师}
+
+% 论文作者院系
+\department{摸鱼系}
+% 论文作者专业方向
+\major{摸鱼科学与技术}
+% 论文作者的年级
+\grade{2022级}
+% 论文提交日期，需设置年、月、日。此属性可选，默认值为最后一次编译时的日期，精确到日。
+\submitdate{2022年5月20日}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 设置论文的英文封面
+
+% 论文的英文标题
+%\englishtitle{Thesis paper template}
+% 论文作者姓名的拼音
+%\englishauthor{San Zhang}
+% 导师姓名职称的英文
+%\englishsupervisor{Professor FengChendian}
+% \englishsecondsupervisor{Professor HermitSun}
+% 论文作者所在院系的英文名称
+%\englishdepartment{School of Electronic Science and Engineering}
+% 论文作者所在学校或机构的英文名称。此属性可选，默认值为``Nanjing University''。
+%\englishinstitute{Nanjing University}
+% 论文完成日期的英文形式，默认最后一次编译的时间
+%\englishdate{May 20, 2018}
+% 专业
+%\englishinstitute{Electronic Information Science and Technology}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 设置论文的页眉页脚
+\usepackage{fancyhdr}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{ %
+numbers=left,   %添加代码的编号，在左侧
+backgroundcolor=\color{white},   % choose the background color
+basicstyle=\ttfamily,        % size of fonts used for the code
+columns=fullflexible,
+breaklines=true,                 % automatic line breaking only at whitespace
+captionpos=b,                    % sets the caption-position to bottom
+tabsize=4,
+commentstyle=\color{mygreen},    % comment style
+escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+keywordstyle=\color{blue},       % keyword style
+stringstyle=\color{mymauve}\ttfamily,     % string literal style
+frame=single,
+rulesepcolor=\color{red!20!green!20!blue!20},
+% identifierstyle=\color{red},
+language=C++,
+}
+%%   页眉自定义
+\pagestyle{fancy}
+\lhead{\includegraphics[scale=0.03]{NJU.png}}  %在此处插入NJU.png图片 图片靠左
+\chead{} % 页眉中间位置内容
+\rhead{\bfseries 摸鱼导论}
+\renewcommand{\headrulewidth}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\fontsize{11pt}{10pt}\selectfont
+\maketitle
+% 制作英文封面
+% \makeenglishtitle
+% 毕业论文过程管理四页表
+% \controlpage %可以将word文件交给老师签字后扫描转成pdf，然后命名为controlpage.pdf
+
+% 论文的中文摘要
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 论文的英文摘要
+%\begin{englishabstract}
+%  The diversity of handwritten Chinese text make it a promising but challenging computer vision problem.
+%  % 英文关键词。关键词之间用英文半角逗号隔开，末尾无符号。
+%  \englishkeywords{Handwritten Chinese, Text recognition, Deep learning}
+%\end{englishabstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 论文的前言，应放在目录之前，中英文摘要之后
+%
+%\begin{preface}
+%
+%在过去的40年中，手写中文文本领域识别（HCTR）取得了很大的进展[1,2]。
+%
+%\vspace{1cm}
+%\begin{flushright}
+%饶安逸\\
+%2018年5月15日于南大仙林
+%\end{flushright}
+%
+%\end{preface}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 生成论文目录
+% \tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 生成插图清单。如无需插图清单则可注释掉下述语句。
+%\listoffigures
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 生成附表清单。如无需附表清单则可注释掉下述语句。
+%\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 开始正文部分
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 学位论文的正文应以《绪论》作为第一章
+
+\section*{摘要}
+man，what can i say
+
+关键词：摸鱼，科比，抽象
+
+\section*{一.引言}
+
+
+
+\section*{二、摸鱼的概念与历史}
+
+\section*{三、所有人都爱摸鱼定律的数学原理}
+
+\subsubsection*{1. 所有人都爱摸鱼定律的数学原理1}
+
+\subsubsection*{2. 所有人都爱摸鱼定律的数学原理2}
+
+\section*{四、所有人都爱摸鱼定律在数学中的应用}
+
+
+% \newpage %为了将图片实例放在一起，另起一页，使用时请删掉
+
+\section*{六、所有人都爱摸鱼定律在自然科学中的应用}
+
+\begin{itemize}
+  \item 物理学：在物理学研究中，摸鱼可以用来分析物理常数和测量数据的分布规律。例如，什么都发现不了
+  \item 生物学：在生物学研究中，首位数定律可以用来分析生物数据的分布规律。例如，什么都发现不了
+\end{itemize}
+
+\section*{七、所有人都爱摸鱼定律的适用条件}
+
+\section*{八、结论与展望 }
+
+
+%\chapter{总结与讨论}
+
+%\bibliography{sample}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 致谢，应放在结论之后
+%\begin{acknowledgement}
+%\end{acknowledgement}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
